@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Boutique</title>
+    <style>
+        body { font-family: 'Helvetica', sans-serif; text-align: center; color: #333; margin: 0; padding: 20px; }
+        header { padding: 50px 0; background: #f9f9f9; border-bottom: 1px solid #eee; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
+        .product-card { border: 1px solid #ddd; padding: 20px; width: 280px; border-radius: 10px; transition: 0.3s; }
+        .product-card:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; border-radius: 5px; height: 350px; object-fit: cover; background: #eee; }
+        .price { font-weight: bold; color: #2ecc71; font-size: 1.3em; margin: 10px 0; }
+        .buy-btn { display: inline-block; margin-top: 15px; padding: 12px 25px; background: #000; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .buy-btn:hover { background: #333; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Boutique</h1>
+        <p>Featuring Exclusive Lucky and Blessed Denim</p>
+    </header>
+
+    <div class="container">
+        <!-- Item 1 -->
+        <div class="product-card">
+            <img src="IMAGE_LINK_1" alt="L&B Jeans">
+            <h3>L&B Flare Jeans</h3>
+            <p class="price">$55.00</p>
+            <a href="PAYMENT_LINK_1" class="buy-btn">Buy Now</a>
+        </div>
+        <!-- Item 2 -->
+        <div class="product-card">
+            <img src="IMAGE_LINK_2" alt="L&B Jeans">
+            <h3>L&B Distressed Denim</h3>
+            <p class="price">$58.00</p>
+            <a href="PAYMENT_LINK_2" class="buy-btn">Buy Now</a>
+        </div>
+        <!-- Item 3 -->
+        <div class="product-card">
+            <img src="IMAGE_LINK_3" alt="Shirt">
+            <h3>Classic Western Shirt</h3>
+            <p class="price">$35.00</p>
+            <a href="PAYMENT_LINK_3" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>
