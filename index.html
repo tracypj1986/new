@@ -54,6 +54,32 @@ background:#111;
 color:white;
 }
 
+/* SHOP SECTION */
+
+.shop{
+padding:80px 20px;
+}
+
+.products{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+margin-top:40px;
+}
+
+.product{
+width:250px;
+border:1px solid #eee;
+padding:20px;
+}
+
+/* show full image */
+
+.product img{
+width:100%;
+height:auto;
+}
 
 /* IMAGE HOVER FLIP */
 
@@ -79,54 +105,28 @@ transition:opacity .4s;
 opacity:1;
 }
 
-</style>
-<style>
-
-body{
-margin:0;
-font-family:'Didot','Times New Roman',serif;
-background:white;
-color:#111;
-text-align:center;
+.price{
+margin-top:10px;
+font-weight:bold;
 }
 
-/* HERO */
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-}
-
-.logo{
-font-size:48px;
-letter-spacing:10px;
-}
-
-.tagline{
-margin-top:20px;
-letter-spacing:6px;
-font-size:16px;
-text-transform:uppercase;
-}
-
-.btn{
-margin-top:40px;
-padding:12px 30px;
-border:1px solid #111;
+.buy{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+border:1px solid black;
 text-decoration:none;
-color:#111;
-letter-spacing:3px;
+color:black;
 font-size:12px;
-transition:all .3s;
+letter-spacing:2px;
 }
 
-.btn:hover{
-background:#111;
+.buy:hover{
+background:black;
 color:white;
 }
+
+</style>
 
 /* SHOP SECTION */
 
@@ -287,6 +287,7 @@ function swapImage() {
 </script>
 </body>
 </html>
+
 
 
 
