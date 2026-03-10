@@ -131,8 +131,10 @@ color:white;
 </head>
 
 <script>
-if (window.location.hash === "") {
-window.location.hash = "#shop";
+window.onload = function() {
+  if (window.location.hash === "#shop") {
+    history.replaceState(null, null, window.location.pathname);
+  }
 }
 </script>
 
@@ -269,6 +271,7 @@ function swapImage() {
 </script>
 </body>
 </html>
+
 
 
 
