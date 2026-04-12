@@ -180,7 +180,7 @@ window.onload = function() {
 
 <div class="price">$58</div>
 
-<select id="jeansSize">
+<select id="jeansSize" onchange="goToCheckout(this)">
   <option value="">Select Size</option>
   <option value="https://buy.stripe.com/dRmbJ18515bj3PK6FlfnO01">Size S</option>
   <option value="https://buy.stripe.com/aFa14nbhdfPX8607JpfnO02">Size M</option>
@@ -192,6 +192,16 @@ window.onload = function() {
 
 </div>
 
+  <div class="product">
+
+<div class="image-container">
+
+<img src="images/boot-front.jpg" class="front">
+
+<img src="images/boot-back.jpg" class="back">
+
+</div>
+    
 <h3>Lucky & Blessed Light Wash Bootcut Jeans</h3>
 
 <p>Light wash high rise distressed bootcut jeans (33in inseam)</p>
@@ -270,19 +280,17 @@ function swapImage() {
 ...your product code...
 
 <script>
-function goToCheckout() {
-  var size = document.getElementById("jeansSize").value;
+function goToCheckout(select) {
+  var link = select.value;
 
-  if(size === ""){
-    alert("Please select a size");
-    return;
+  if(link !== ""){
+    window.location.href = link;
   }
-
-  window.location.href = size;
 }
 </script>
 </body>
 </html>
+
 
 
 
