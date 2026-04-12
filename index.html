@@ -274,12 +274,10 @@ window.onload = function() {
 
 </div>
 
-<section>
-
-  let showingFront = true;
+<script>
+let showingFront = true;
 
 function swapImage() {
-
   let img = document.getElementById("jeans1");
 
   if(showingFront){
@@ -289,9 +287,8 @@ function swapImage() {
     img.src = "images/flare-front.jpg";
     showingFront = true;
   }
-
 }
-<script>
+
 function buyNow(id) {
   var value = document.getElementById(id).value;
 
@@ -303,9 +300,9 @@ function buyNow(id) {
   window.location.href = value;
 }
 </script>
+
 </body>
 </html>
-
 
 
 
