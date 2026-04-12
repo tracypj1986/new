@@ -289,20 +289,16 @@ function swapImage() {
   }
 
 }
-</script>
-
-...your product code...
-
 <script>
-function goToCheckout() {
-  var size = document.getElementById("jeansSize").value;
+function buyNow(id) {
+  var value = document.getElementById(id).value;
 
-  if(size === ""){
+  if(value === ""){
     alert("Please select a size");
     return;
   }
 
-  window.location.href = size;
+  window.location.href = value;
 }
 </script>
 </body>
