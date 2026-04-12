@@ -178,18 +178,7 @@ window.onload = function() {
 
 <div class="price">$58</div>
 
-<script>
-function goToCheckout() {
-  var size = document.getElementById("jeansSize").value;
-
-  if(size === ""){
-    alert("Please select a size");
-    return;
-  }
-
-  window.location.href = size;
-}
-</script>
+<select id="jeansSize">
   <option value="">Select Size</option>
   <option value="https://buy.stripe.com/dRmbJ18515bj3PK6FlfnO01">Size S</option>
   <option value="https://buy.stripe.com/aFa14nbhdfPX8607JpfnO02">Size M</option>
@@ -198,8 +187,6 @@ function goToCheckout() {
 </select>
 
 <button class="buy" onclick="goToCheckout()">BUY</button>
-
-</div>
 
 
 <div class="product">
