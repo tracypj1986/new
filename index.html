@@ -168,6 +168,8 @@ window.onload = function() {
 <img src="images/flare-back.jpg.jpg" class="back">
 </div>
 
+<div class="product">
+
 <h3>Lucky & Blessed Light Wash High Rise Distressed Boot Cut Jeans</h3>
 
 <p>Light wash high rise distressed unfinished hem boot cut jeans</p>
@@ -187,15 +189,6 @@ window.onload = function() {
 </select>
 
 <button class="buy" onclick="goToCheckout()">BUY</button>
-
-
-<div class="product">
-
-<div class="image-container">
-
-<img src="images/boot-front.jpg.jpg" class="front">
-
-<img src="images/boot-back.jpg.jpg" class="back">
 
 </div>
 
@@ -278,7 +271,7 @@ function swapImage() {
 
 <script>
 function goToCheckout() {
-  var size = document.getElementById("shortsSize").value;
+  var size = document.getElementById("jeansSize").value;
 
   if(size === ""){
     alert("Please select a size");
@@ -288,7 +281,6 @@ function goToCheckout() {
   window.location.href = size;
 }
 </script>
-
 </body>
 </html>
 
