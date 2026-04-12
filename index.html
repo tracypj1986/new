@@ -170,6 +170,13 @@ window.onload = function() {
 
 <div class="product">
 
+<div class="product">
+
+<div class="image-container">
+<img src="images/flare-front.jpg" class="front">
+<img src="images/flare-back.jpg" class="back">
+</div>
+
 <h3>Lucky & Blessed Light Wash High Rise Distressed Boot Cut Jeans</h3>
 
 <p>Light wash high rise distressed unfinished hem boot cut jeans</p>
@@ -180,15 +187,13 @@ window.onload = function() {
 
 <div class="price">$58</div>
 
-<select id="jeansSize" onchange="goToCheckout(this)">
+<select onchange="if(this.value) window.location.href=this.value;">
   <option value="">Select Size</option>
   <option value="https://buy.stripe.com/dRmbJ18515bj3PK6FlfnO01">Size S</option>
   <option value="https://buy.stripe.com/aFa14nbhdfPX8607JpfnO02">Size M</option>
   <option value="https://buy.stripe.com/cNi14n2KHgU14TO4xdfnO03">Size L</option>
   <option value="https://buy.stripe.com/6oU5kD4SPgU12LG0gXfnO04">Size XL</option>
 </select>
-
-<button class="buy" onclick="goToCheckout()">BUY</button>
 
 </div>
 
