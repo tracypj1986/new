@@ -159,8 +159,10 @@ window.onload = function() {
 
 <h2>Collection</h2>
 
-<div class="product">
+<div class="products">
 
+<!-- PRODUCT 1 -->
+<div class="product">
 <div class="image-container">
 <img src="images/flare-front.jpg.jpg" class="front">
 <img src="images/flare-back.jpg.jpg" class="back">
@@ -169,121 +171,55 @@ window.onload = function() {
 <h3>Lucky & Blessed Light Wash High Rise Distressed Boot Cut Jeans</h3>
 
 <p>Light wash high rise distressed unfinished hem boot cut jeans</p>
-
 <p>32in inseam</p>
-
 <p>Sizes: S, M, L, XL</p>
 
 <div class="price">$58</div>
-<select id="jeansSize">
+
+<select id="size1">
   <option value="">Select Size</option>
   <option value="https://buy.stripe.com/dRmbJ18515bj3PK6FlfnO01">Size S</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-   <option value="https://buy.stripe.com/aFa14nbhdfPX8607JpfnO02">Size M</option>
+  <option value="https://buy.stripe.com/aFa14nbhdfPX8607JpfnO02">Size M</option>
   <option value="https://buy.stripe.com/cNi14n2KHgU14TO4xdfnO03">Size L</option>
   <option value="https://buy.stripe.com/6oU5kD4SPgU12LG0gXfnO04">Size XL</option>
 </select>
 
-<button class="buy" onclick="goToCheckout()">BUY</button>
-
+<button onclick="buyNow('size1')">BUY</button>
 </div>
 
+
+<!-- PRODUCT 2 -->
 <div class="product">
 <div class="image-container">
 <img src="images/boot-front.jpg.jpg" class="front">
 <img src="images/boot-back.jpg.jpg" class="back">
 </div>
-    
+
 <h3>Lucky & Blessed Light Wash Bootcut Jeans</h3>
 
 <p>Light wash high rise distressed bootcut jeans (33in inseam)</p>
-
-<p>Sizes: 0, 2, 4, 6, 8, 10, 12, 14</p>
+<p>Sizes: 0–14</p>
 
 <div class="price">$55</div>
-<select id="jeansSize">
+
+<select id="size2">
   <option value="">Select Size</option>
-  <option value="https://buy.stripe.com/dRmbJ18515bj3PK6FlfnO01">Size S</option>
+  <option value="https://buy.stripe.com/4gM6oHgBx0V33PK2p5fnO06">0</option>
+  <option value="https://buy.stripe.com/00wdR9fxt0V3cmg5BhfnO05">1</option>
+  <option value="https://buy.stripe.com/8x24gz70X9rz5XS7JpfnO0h">2</option>
+  <option value="https://buy.stripe.com/6oU28rdpl0V3dqkfbRfnO07">4</option>
+  <option value="https://buy.stripe.com/14A5kD4SP33bgCw2p5fnO08">6</option>
+  <option value="https://buy.stripe.com/3cI8wPbhd0V32LGd3JfnO09">8</option>
+  <option value="https://buy.stripe.com/3cIdR9ad98nv5XS1l1fnO0a">10</option>
+  <option value="https://buy.stripe.com/bJe3cv1GD1Z7gCw3t9fnO0b">12</option>
+  <option value="https://buy.stripe.com/bJeeVd4SP6fn0DygfVfnO0c">14</option>
 </select>
 
-<button onclick="window.location.href=document.getElementById('jeansSize').value">
-BUY
-</button>://buy.stripe.com/00wdR9fxt0V3cmg5BhfnO05">Size 1</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/8x24gz70X9rz5XS7JpfnO0h">Size 2</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/6oU28rdpl0V3dqkfbRfnO07">Size 4</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/14A5kD4SP33bgCw2p5fnO08">Size 6</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/3cI8wPbhd0V32LGd3JfnO09">Size 8</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/3cIdR9ad98nv5XS1l1fnO0a">Size 10</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/bJe3cv1GD1Z7gCw3t9fnO0b">Size 12</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/bJeeVd4SP6fn0DygfVfnO0c">Size 14</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-</select>
-
-  <button class="buy" onclick="goToCheckout()">BUY</button>
-
+<button onclick="buyNow('size2')">BUY</button>
 </div>
 
+
+<!-- PRODUCT 3 -->
 <div class="product">
 <div class="image-container">
 <img src="images/shirt-front.jpg.jpg" class="front">
@@ -293,45 +229,23 @@ BUY
 <h3>Lucky & Blessed Cream Pearl Snap Puff Sleeve Shirt</h3>
 
 <p>Cream pearl snap puff sleeve long sleeve shirt</p>
-
 <p>Sizes: S, M, L</p>
 
 <div class="price">$28</div>
 
-<select id="jeansSize">
+<select id="size3">
   <option value="">Select Size</option>
-  <option value="https://buy.stripe.com/8x2aEXdpl7jr1HC2p5fnO0d">Size S</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-   <option value="https://buy.stripe.com/5kQ9ATetp8nveuo1l1fnO0e">Size M</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/3cI14n851avD3PK4xdfnO0f">Size L</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
+  <option value="https://buy.stripe.com/8x2aEXdpl7jr1HC2p5fnO0d">S</option>
+  <option value="https://buy.stripe.com/5kQ9ATetp8nveuo1l1fnO0e">M</option>
+  <option value="https://buy.stripe.com/3cI14n851avD3PK4xdfnO0f">L</option>
 </select>
 
-<button class="buy" onclick="goToCheckout()">BUY</button>
-
+<button onclick="buyNow('size3')">BUY</button>
 </div>
 
-<div class="product">
 
+<!-- PRODUCT 4 -->
+<div class="product">
 <div class="image-container">
 <img src="images/shorts-front.jpg" class="front">
 <img src="images/shorts-side.jpg" class="back">
@@ -340,80 +254,26 @@ BUY
 <h3>Lucky & Blessed Midwash Rhinestone Cuffed Denim Shorts</h3>
 
 <p>Midwash rhinestone cuffed stretch denim shorts</p>
-
-<p>4.5in inseam after cuff</p>
-
-<p>Sizes: 2, 4, 6, 8, 10, 12, 14</p>
+<p>4.5in inseam</p>
 
 <div class="price">$35</div>
 
-<select id="jeansSize">
-<option value="">Select Size</option>
-<option value="https://buy.stripe.com/8x24gz70X9rz5XS7JpfnO0h">Size 2</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/14A7sLclhavD0Dy2p5fnO0i">Size 4</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/8x25kD3OL0V3dqk5BhfnO0j">Size 6</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/9B614ngBx7jr5XS6FlfnO0k">Size 8</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/4gM7sL70X0V3euo9RxfnO0l">Size 10</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/00waEXbhd6fnbic9RxfnO0m">Size 12</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <option value="https://buy.stripe.com/aFaeVd1GD0V3dqkfbRfnO0n">Size 14</option>
-  <button onclick="
-var size = document.getElementById('jeansSize').value;
-if(size===''){alert('Please select a size'); return;}
-window.location.href=size;
-">
-BUY
-</button>
-  <button class="buy" onclick="goToCheckout()">BUY</button>
+<select id="size4">
+  <option value="">Select Size</option>
+  <option value="https://buy.stripe.com/8x24gz70X9rz5XS7JpfnO0h">2</option>
+  <option value="https://buy.stripe.com/14A7sLclhavD0Dy2p5fnO0i">4</option>
+  <option value="https://buy.stripe.com/8x25kD3OL0V3dqk5BhfnO0j">6</option>
+  <option value="https://buy.stripe.com/9B614ngBx7jr5XS6FlfnO0k">8</option>
+  <option value="https://buy.stripe.com/4gM7sL70X0V3euo9RxfnO0l">10</option>
+  <option value="https://buy.stripe.com/00waEXbhd6fnbic9RxfnO0m">12</option>
+  <option value="https://buy.stripe.com/aFaeVd1GD0V3dqkfbRfnO0n">14</option>
 </select>
 
+<button onclick="buyNow('size4')">BUY</button>
 </div>
 
-<section>
-
-<script>
-
+</div>
+</section>
 let showingFront = true;
 
 function swapImage() {
